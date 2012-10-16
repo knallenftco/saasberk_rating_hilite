@@ -38,7 +38,4 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
-  def hilite_sort 
-    @params = Movie.find(:all,*args)
-  end
 end

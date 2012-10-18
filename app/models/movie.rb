@@ -1,7 +1,7 @@
 class Movie < ActiveRecord::Base
 
 
-def Movie.get_ratings
+def self.get_ratings
   @find_ratings=[]
   Movie.all.each do |m|
     @find_ratings<<m.rating
